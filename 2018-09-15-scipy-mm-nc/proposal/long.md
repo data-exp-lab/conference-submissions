@@ -1,18 +1,17 @@
 The Long Description:
 
-We will present a tool developed for fast, interactive, browser-based
-interactivity of datasets using Jupyter widgets with yt. Jupyter widgets
-offer a unique opportunity to access the functionality in yt 
+This talk covers a tool developed for fast, interactive, browser-based
+visualization of datasets using Jupyter widgets developed for use with yt. 
+Jupyter widgets offer a unique opportunity to access the functionality in yt 
 using a graphical interface, 
-allowing for a relatively high degree of control over the data and simultaneously 
-providing the user with 
-an accessibility and ease-of-use not traditionally accessible through the API
+allowing for a relatively high degree of control over the data and simultaneously
+providing the user with an ease-of-use not immediately accessible through the API
 alone. Further, browser latency may be an issue with direct
-exploration of data with a widget. By compiling our
-pixelizer directly to webassebly, datasets can be interactively explored
+visualization of data with a widget. By compiling our
+pixelizer directly to webassebly, datasets can be interactively visualized
 without delays resulting from transmission from yt to the browser.
 
-Our presentation will have the following general outline:
+Our presentation will have the following general struture:
 * The development of the tool
   * Using Rust compiled to WebAssembly for image pixelization and rendering
   * The development of a modular widget structure to interact with both yt and
@@ -21,8 +20,10 @@ Our presentation will have the following general outline:
   the yt API or immersive visualization methods.  
 * A live demonstration using a representative dataset 
   of the features available for data visualization with our widget.
-* Discuss the lessons learned from developing the tool and discuss how it might
-  be applied to other three-dimensional volumetric visualization packages. 
+* Discussion covering the challenges and lessons learned 
+  from developing the tool, with commentary on how this functionality might be
+  applied in other scenarios.
+* A brief commentary on next steps and other features we'd like to implement. 
 
 The authors of this toolkit are Nathanael Clausen and Madicken Munk. Both
 authors intend to present their respective contributions to the project. 
