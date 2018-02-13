@@ -7,9 +7,12 @@ using a graphical interface,
 allowing for simultaneous control over the data and an 
 ease-of-use not immediately accessible through the API
 alone. Further, browser latency may be an issue with direct
-visualization of data with a widget. By compiling our
-pixelizer directly to WebAssembly, datasets can be interactively visualized
-without delays resulting from transmission from yt to the browser.
+visualization of volumetric data with a widget. By compiling our
+pixelizer directly to WebAssembly we can minimize latency that
+results from transmission between yt and the browser. 
+
+, datasets can be interactively visualized
+without latency occurring from transmission between yt and the browser.
 
 Our presentation will have the following general structure:
 * The development of the tool
