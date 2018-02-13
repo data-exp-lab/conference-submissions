@@ -8,14 +8,14 @@ allowing for simultaneous control over the data and an
 ease-of-use not immediately accessible through the API
 alone. Further, browser latency may be an issue with direct
 visualization of volumetric data with a widget. By compiling our
-pixelizer directly to WebAssembly we can minimize latency that
-results from transmission between yt and the browser. 
+data and pixelizer directly to WebAssembly we can minimize latency that
+results from data transmission between yt and the browser. 
 
 Our presentation will have the following general structure:
 * The development of the tool
   * Using Rust compiled to WebAssembly for image pixelization and rendering
   * The development of a modular widget structure to interact with both yt and
-    webassembly to interactively explore data. 
+    webassembly to interactively explore and visualize data. 
 * Comparing data exploration with this tool versus direct data exploration with
   the yt API or immersive visualization methods.  
 * A live demonstration using a representative dataset 
