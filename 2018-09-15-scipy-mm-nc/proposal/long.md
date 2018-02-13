@@ -11,9 +11,6 @@ visualization of volumetric data with a widget. By compiling our
 pixelizer directly to WebAssembly we can minimize latency that
 results from transmission between yt and the browser. 
 
-, datasets can be interactively visualized
-without latency occurring from transmission between yt and the browser.
-
 Our presentation will have the following general structure:
 * The development of the tool
   * Using Rust compiled to WebAssembly for image pixelization and rendering
