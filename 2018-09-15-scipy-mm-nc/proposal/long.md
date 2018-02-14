@@ -1,19 +1,23 @@
 The Long Description:
 
 This talk covers a tool developed for fast, interactive, browser-based
-visualization of datasets using Jupyter widgets developed for use with yt. 
-Jupyter widgets offer a unique opportunity to access the functionality in yt 
-using a graphical interface, 
-allowing for simultaneous control over the data and an 
-ease-of-use not immediately accessible through the API
-alone. Further, browser latency may be an issue with direct
-visualization of volumetric data with a widget. 
-We minimize latency that results from data transmission between yt and the
-browser by compiling to WebAssembly and pushing data to the browser. Operations
-on the data are subsequently done in the browser.
+visualization of datasets with yt, a python package used to analyze and
+visualize volumetric data in a number of scientific domains. 
+This tool uses Jupyter widgets to do interactive data exploration and
+visualization in the browser. Jupyter widgets provide users with a 
+balance between ease-of-use and access to API functionality, 
+but have a lower barrier to entry for data
+exploration than direct API manipulation alone. We anticipated latency 
+issues with some datasets resulting from data transmission between yt and the
+browser. As the data canvas is updated, a new image is created and this
+computation is generally done outside of the browser environment, requiring
+data transfer for canvas updates. We minimize this latency by
+compiling our visualization routines to WebAssembly, pushing data to the
+browser, and doing subsequent computations in the browser. This tool will 
+provide a pathway for fast, interactive data visualization and exploration  
+for a diverse user base. 
 
-
-Our presentation will have the following general structure:
+Our presentation will have the following structure:
 * The development of the tool
   * Using Rust compiled to WebAssembly for image pixelization and rendering
   * The development of a modular widget structure to interact with both yt and
@@ -33,26 +37,41 @@ Madicken developed the backend pixelization routines that port
 data arrays from yt using rust to WebAssembly. 
 Nathanael developed the Jupyter widget that readily interfaces with
 yt and WebAssembly to interactively visualize data using widgets in 
-Jupyter notebooks. Madicken is a postdoctoral research scholar and 
+Jupyter notebooks. 
+
+We have developed this tool
+as members of the data exploration lab (DXL), an interdisciplinary research 
+group focused on data exploration and visualization at the
+University of Illinois at Urbana Champaign. 
+Madicken is a postdoctoral research scholar in the DXL and 
 has presented at topical conferences and
 departmental colloquia in her
 scientific domain, listed (with slides when appropriate) here:
 http://munkm.github.io/posts/2017/09/28/publications.html . Nathanael was an
-undergraduate summer intern for the data exploration lab, which includes
-several core contributors to yt. 
-Nathanael has transitioned from his internship to joining the data
-exploration lab as an undergraduate researcher and has given a number of 
+undergraduate summer intern for the DXL. 
+Nathanael has transitioned from a summer internship with the DXL to
+joining it as an undergraduate researcher. He has given a number of 
 classroom presentations. 
 
 This talk will be of interest to any attendees interested in data visualization
 and visual exploration of data. It will also be of interest to attendees that
-have three-dimensional datasets that may be visualized using yt. yt has been
-applied in several scientific domains, including astronomy, seismology, nuclear
-engineering, and oceanography. This tool potentially can be extended to other
+have three-dimensional datasets that may be visualized using yt. 
+Our tool potentially can be extended to other
 three-dimensional data visualization tools, so developers interested in adding
-this functionality to their packages may also find this talk of interest. 
+this functionality to their packages may also find this talk of interest. Last,
+individuals interested in developing advanced Jupyter widgets to do
+browser-based computation or communicating nontrivially-sized datasets from
+Python to the browser may find this talk of interest. 
+
+The yt project
+is a community-developed NUMFocus project that depends on core scipy
+libraries--including matplotlib, numpy, and sympy--and has been
+applied in several scientific domains, including astronomy, seismology, nuclear
+engineering, and oceanography. Many contributors to yt
+are also members of the Data Exploration Lab. 
 
 Relevant links:
+* The DXL group webpage: https://dxl.ncsa.illinois.edu/
 * The yt project page: http://yt-project.org/
 * yt repository: https://github.com/yt-project/yt 
 * yt-tools widget repository: https://github.com/data-exp-lab/yt_widgets
