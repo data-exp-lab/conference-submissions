@@ -1,8 +1,8 @@
 The Short Description:
 
-This talk covers a tool developed for fast, interactive, browser-based
-visualization of datasets using Jupyter widgets developed for use with 
-yt, a python package used to analyze and visualize volumetric data in
+This talk covers a Jupyter widget built using Rust and WebAssembly for
+interactive, browser-based visualization of datasets with yt, a
+python package used to analyze and visualize volumetric data in
 a number of scientific domains. Users can interact and explore datasets of
 varying sizes with our Jupyter widget. We minimize latency that results from
 data transmission between yt and the 
