@@ -39,7 +39,7 @@ sources, it also captures the data lineage of all objects used in an analysis to
 support subsequent reproducibility.  We believe that our approach to handling
 data this way can be easily generalized to other similar projects in the SciPy
 "ecosystem", such as JupyterHub/BinderHub. Furthermore, introducing an abstract
-layer between data and computations allows for a finegrained provenance tracking
+layer between data and computations allows for finegrained provenance tracking
 making it easy to provide an automatic credit attribution and boost the
 reproducibility of the scholarly process.
 
@@ -62,8 +62,8 @@ authentication issues related to running anonymous compute environments, and
 tracking provenance. Scientists interested in reproducible research may find
 Whole Tale a powerful addition to their computational toolbox.
 
-Matthew Turk is co-PI of The Whole Tale project. Kacper Kowalik serves as a
-software architect for WT.
+Kacper Kowalik serves as a software architect for WT. Matthew Turk is co-PI of
+The Whole Tale project.
 
 Online references:
 * https://github.com/whole-tale -- Project software repositories
