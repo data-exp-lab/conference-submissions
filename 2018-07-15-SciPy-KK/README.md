@@ -8,31 +8,62 @@ Matthew Turk (NCSA/iSchool, UIUC)
 
 Short description
 -----------------
-Accessing remote data with persistent, user-definable computational environments is a key challenge in digital scholarship.  The Whole Tale is a response to this, building and combining components to provide a virtual research "home" on the web.  In this talk, we'll describe how the Whole Tale project leverages existing Python projects (Jupyter, PyFilesystem, fusepy, WsgiDAV, Girder and many others) to bring remote analysis and data together, providing persistent workspaces and capturing provenance and data lineage to facilitate the scholarly process.
+
+Accessing remote data with persistent, user-definable computational environments
+is a key challenge in digital scholarship.  The Whole Tale is a response to this
+requirement, building and combining components to provide a virtual research
+"home" on the web.  In this talk, we'll describe how the Whole Tale project
+leverages existing Python projects (Jupyter, PyFilesystem, fusepy, WsgiDAV,
+Girder and many others) to bring remote analysis (including code and
+environment) and data together, providing persistent workspaces while
+automatically capturing provenance and data lineage to facilitate
+reproducibility and verifiability -- cornerstones of the scholarly process.
 
 Long description
 ----------------
 
-This talk introduces the Whole Tale project, which aims to enable researchers to examine, transform and then seamlessly republish research data that was used in a scientific articles. We strive to strengthen the three layers of scholarly publication: scholarly process, data access, and computational analysis.
+This talk introduces the Whole Tale project, an effort to enrich computational
+and data-driven research by enabling fully reproducible publication of the
+research process. The Whole Tale provides an intuitive environment which enables
+seamless data discovery and access, reproducible data manipulation, and
+automated provenance capture. In effect, Whole Tale strengthens the three layers
+of scholarly publication: sharing the scholarly methodology applied, the data
+used, and the analysis process and computational environment via which results
+were obtained.
 
-A principle of The Whole Tale is running custom, containerized compute environments, along with external data exposed to the user as a unified FUSE filesystem, transparently mediating access to remote and diverse data sources. We believe that our approach to handling data this way can be easily generalized to other similar projects in the SciPy "ecosystem", such as JupyterHub/BinderHub. Furthermore, introducing an abstract layer between data and computations allows for a finegrained provenace tracking making it easy to provide an automatic credit attribution and boost the reproducibility of the scholarly process.
+To deliver on this vision, the Whole Tale relies on customized, containerized
+compute environments to capture the entire research process. It augments these
+containers with a managed data access interface built upon a unified FUSE
+filesystem. The filesystem not only abstracts and mediates access to remote data
+sources, it also captures the data lineage of all objects used in an analysis to
+support subsequent reproducibility.  We believe that our approach to handling
+data this way can be easily generalized to other similar projects in the SciPy
+"ecosystem", such as JupyterHub/BinderHub. Furthermore, introducing an abstract
+layer between data and computations allows for a finegrained provenance tracking
+making it easy to provide an automatic credit attribution and boost the
+reproducibility of the scholarly process.
 
 Our presentation will have the following structure:
 
-* Introducing Whole Tale
+* Introducing Whole Tale (WT)
     * Project goals
     * Major concepts
 * Overview of the architecture
-    * Comparison with exisiting solutions
+    * Comparison with existing solutions
     * Highlight software projects from Python ecosystem used in WT
 * FUSE filesystem as way of getting data into remote environment
     * Problems we are trying to solve
     * Current implementation
 * A brief outlook of upcoming features 
 
-This talk should be of interest to anyone trying to solve the issues related to "injecting" data into containerized environments (Docker etc.), handling authentication issues related to running anonymous compute environments, and tracking provenance and reproducibility of scientific articles.
+This talk will be of interest to those trying to solve the issues related to
+"injecting" data into containerized environments (Docker etc.), handling
+authentication issues related to running anonymous compute environments, and
+tracking provenance. Scientists interested in reproducible research may find
+Whole Tale a powerful addition to their computational toolbox.
 
-Matthew Turk is co-PI of The Whole Tale project. Kacper Kowalik serves as a software architect for WT.
+Matthew Turk is co-PI of The Whole Tale project. Kacper Kowalik serves as a
+software architect for WT.
 
 Online references:
 * https://github.com/whole-tale -- Project software repositories
