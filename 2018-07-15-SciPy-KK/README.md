@@ -1,10 +1,26 @@
-SciPy 2018 (KK, MT)
-===================
+Sneaking Data into Containers with the Whole Tale
+=================================================
+
+Track
+-----
+
+SciPy 2018 Talks and Posters
 
 Authors
 -------
+
 Kacper Kowalik (NCSA, UIUC)
 Matthew Turk (NCSA/iSchool, UIUC)
+
+Author keywords
+---------------
+
+* data
+* reproducibility
+* filesystems
+* containers
+* remote analysis
+* workflows
 
 Short description
 -----------------
