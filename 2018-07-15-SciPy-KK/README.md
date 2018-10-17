@@ -1,7 +1,7 @@
 Sneaking Data into Containers with the Whole Tale
 =================================================
 
-See [video](https://www.youtube.com/watch?v=X0UX4bW_4w0).
+See this [video](https://www.youtube.com/watch?v=X0UX4bW_4w0) for more detail.
 
 Track
 -----
