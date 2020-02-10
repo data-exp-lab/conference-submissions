@@ -30,6 +30,18 @@ courses, and also has served as lead instructor at numerous carpentry workshops.
 Madicken has helped to add support in yt for nuclear engineering and
 geospatially-located data. 
 
+## Audience Expectations
+
+We expect audience members to be familiar with numpy array operations and
+some familiarity with matplotlib plotting operations. Much of the tutorial will
+be done in Jupyter notebooks, so learners will find the tutorial easier to
+follow if they have some experience with notebook cell execution and launching. 
+No previous experience with yt is
+expected, but attendees with yt experience are also welcome to attend and
+learn. Ideally audience members should be working with data that is volumetric
+in nature; the data can be at any scale but should be either mesh-based or
+pointwise. 
+
 ## Short Description
 
 yt (https://yt-project.org/) is a python package for the analysis, visualization, 
