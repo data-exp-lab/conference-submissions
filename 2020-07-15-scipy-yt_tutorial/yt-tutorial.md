@@ -18,7 +18,7 @@ Kacper Kowalik is a research scientist at the National Center for
 Supercomputing Applications. He a core contributor of yt and helps to maintain the
 infrastructure around the project, including the project's CI, the project
 website, and the yt-hub. Kacper's knowledge of yt infrastructure will be
-integral in diaagnosing user issues throughout the workshop. 
+integral in diagnosing user issues throughout the workshop. 
 
 Madicken Munk is a postdoc at the National Center for Supercomputing
 Applications and serves on the steering committee for the yt project. She has
@@ -44,26 +44,34 @@ pointwise.
 
 ## Short Description
 
+Do you have mesh-based or particle-based data that's volumetric in nature? Have
+you been hacking together a pipeline to get your data into a form that you can
+plot it effectively? Do you need to slice through your data, select a region of
+your data, and then perform custom analysis on them? Do you want to visualize
+your data as a slice, projected through space, or as a volume? Then 
+yt may be a tool for you!
+
 yt (https://yt-project.org/) is a python package for the analysis, visualization, 
 and manipulation of volumetric data. yt has support for variable and regular 
 mesh-based data as well as discrete (particle-like) data. 
 In this tutorial, we will show users both
 new to the package and those already familiar with it about how yt loads, 
 stores, and handles data so they can
-effectively maximize their use of iton their own data. The project
+effectively maximize their use of it on their own data. The project
 has made an effort in recent years to be domain-agnostic, so our tutorial will
 leverage real data from a number of scientific domains. Broadly, we will cover
 loading various data with yt routines, how the data object is handled by yt,
 how the data can be manipulated with volumetric and numerical selection
 routines, how various data objects can be visualized with yt, and how those
-visualizations can be modified and annotated. 
+visualizations can be modified and annotated to create high-quality
+publication-level figures. 
 
 ## Long Description
 
 We are developing a set of tutorial lessons to give seasoned users and new
 users of yt deeper insight into the fundamentals of how yt data is structured, how it
 can be manipulated, and how it can be visualized. This tutorial will be
-available online in a github repository and allow users to step through 
+available online in a GitHub repository and allow users to step through 
 the exercises in real time
 along with the instructors. We plan on having the notebooks supplemented with
 text that roughly will match what the instructor will be saying so that the
@@ -105,12 +113,13 @@ A draft outline of the tutorial (can be altered for flexibility):
     - Description of the ProjectionPlot
     - projections on regions 
     - Projection methods
+    - Exercise: create a ProjectionPlot of 'density' weighted with 'temperature'.
 - PhasePlots (30m)
 - Volume Rendering (30m)
 
 - Total running time should be roughly 275 minutes, however we have built in
   some buffer time to each of these subsections to help keep things running on
-  time. 
+  time. This tutorial can also be cut down for time if necessary. 
 
 ## Setup Instructions
 
@@ -121,6 +130,11 @@ lesson materials. This will be supplemented with step-by-step directions on
 how to recreate that environment on their local machine. 
 We also plan to provide alternative instructions for learners
 who wish to install yt from source, should they wish to do so. 
+
+The yt project also has resources to provide remote environments available to
+users with builds of the software and the data that will be used in the
+tutorial. We would be willing to set this up if the learners will have access to a
+strong internet connection. 
 
 # Relevant links
 
